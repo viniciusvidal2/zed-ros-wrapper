@@ -414,7 +414,8 @@ private:
 
   bool mStopNode = false;
 
-  const double mSensPubRate = 400.0; // Maximum ODR for ZED2/ZED2i. You can change this to 800 for ZED-M, but it's not recommended
+  // Vinicius - reduce IMU rate for FAST-LIO
+  const double mSensPubRate = 100.0; // Maximum ODR for ZED2/ZED2i. You can change this to 800 for ZED-M, but it's not recommended
 
   // Publishers
   image_transport::CameraPublisher mPubRgb;       //
